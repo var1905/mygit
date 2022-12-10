@@ -1,17 +1,48 @@
-//adding HEllo before item Lister
-var newDiv =document.createElement('div');
-newDiv.className='hello'
-var newDivText=document.createTextNode('HEllo');
-newDiv.appendChild(newDivText);
-var container =document.querySelector('header .container');
-var h1=document.querySelector('header h1');
-container.insertBefore(newDiv,h1)
+//Treversing the dom
 
-//adding HEllo beafore item 1
-var newDiv2=document.createElement('div');
-newDiv2.className='hello2'
-var newDivText2=document.createTextNode('HEllo');
-newDiv2.appendChild(newDivText2);
-  var container2=document.querySelector('.list-group');
- var item1=document.querySelector('.list-group li')
- container2.insertBefore(newDiv2,item1)
+let itemList =document.querySelector('#items')
+
+//parantNOde
+
+// console.log(itemList.parentNode)
+
+// itemList.parentNode.style.backgroundColor="grey"
+
+// console.log(itemList.parentNode.parentNode.parentNode)
+
+//parentElement
+
+// console.log(itemList.parentElement)
+
+
+
+
+//childNodes
+
+// console.log(itemList.childNodes);
+
+  // createElement 
+
+  //crreate a div
+
+  var newDiv= document.createElement('div');
+
+  console.log(newDiv)
+
+  newDiv.className='hello';
+
+  console.log(newDiv)
+
+  // crateing text node
+
+  var newDivText= document.createTextNode('hello');
+
+  //add text to div
+
+  newDiv.appendChild(newDivText);
+
+  var container =document.querySelector('header .container')
+
+  var h1 =document.querySelector('header  h1');
+
+    container.insertBefore(newDiv,h1)
