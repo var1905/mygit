@@ -1,7 +1,6 @@
 var form=document.getElementById('addForm')
 var itemslist=document.getElementById('items')
 var filter =document.getElementById('filter');
-
 form.addEventListener('submit',additems)
 itemslist.addEventListener('click',removeItem)
 //filter event 
@@ -12,12 +11,15 @@ function additems(e)
 e.preventDefault();
 //get inlut value
 var newItem =document.getElementById('item').value;
+var newItem2=document.getElementById('item2').value;
 // create new li element
 var li= document.createElement('li');
 // add class
 li.className='list-group-item';
 // add text node whith iput value
-li.appendChild(document.createTextNode(newItem))
+li.appendChild(document.createTextNode(newItem+" "+newItem2))
+
+
 // create del button element 
 var editbtn =document.createElement('button');
 // add classes to del button
